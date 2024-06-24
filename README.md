@@ -1,5 +1,7 @@
 # Gestandaardiseerde dataproducten voortbrengen met LinkML
 
+![](./assets/overzicht.svg)
+
 ## Werkzaamheden
 Vanuit de werkgroep Semantische Interoperabiliteit wordt de *NBNL-profielgroep* gedefinieerd. Voor het uitdrukken van de profielen wordt LinkML gebruikt. Het is daarmee een mooie usecase ...
 
@@ -39,8 +41,8 @@ Machineleesbaar, maar inclusief mensvriendelijke documentatie.
 * Nieuwe URI's toekennen aan de begrippen.
 * URI's dereferenceable maken zodat de definitie en documentatie van de begrippen via standaard HTTP-verzoeken op te vragen is.
 
-### Profileren van referentiemodellen
-Het profileren van LinkML-schema's, ongeacht wat voor type model daarin beschreven is.
+### Profileren van (referentie)schema's
+Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven is.
 
 #### Uitbreiden en verbeteren van LinkML Profiler.
 * Functionaliteiten uitbreiden.
