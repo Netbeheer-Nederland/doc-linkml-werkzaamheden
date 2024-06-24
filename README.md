@@ -1,6 +1,6 @@
 # Gestandaardiseerde dataproducten voortbrengen met LinkML
 
-![](./assets/overzicht.svg)
+![](./assets/overzicht.png)
 
 ## Werkzaamheden
 Vanuit de werkgroep Semantische Interoperabiliteit wordt de *NBNL-profielgroep* gedefinieerd. Voor het uitdrukken van de profielen wordt LinkML gebruikt. Het is daarmee een mooie usecase ...
