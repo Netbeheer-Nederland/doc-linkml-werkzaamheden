@@ -26,7 +26,7 @@ Dit omvat gebruik van LinkML, alsook gebruik van DCAT/DX-PROF of wat het ook mog
 
 #### Omschrijving
 
-De definitie van wat een dataproduct is dient formeel vastgelegd te worden door een datamodel op te stellen op basis van een referentiestandaard als [DCAT]([Data Catalog Vocabulary (DCAT) - Version 3](https://www.w3.org/TR/vocab-dcat-3/)) of DX-PROF. In het bijzonder kan gekeken worden naar reeds bestaande toepassingsprofielen op basis van DCAT gemaakt door de [EU]([DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/)) en de [Nederlandse overheid]([DCAT-AP-DONL | Data overheid](https://data.overheid.nl/en/ondersteuning/open-data/dcat)).
+De definitie van wat een dataproduct is dient formeel vastgelegd te worden door een datamodel op te stellen op basis van een referentiestandaard als [DCAT](https://www.w3.org/TR/vocab-dcat-3/) of DX-PROF. In het bijzonder kan gekeken worden naar reeds bestaande toepassingsprofielen op basis van DCAT gemaakt door de [EU](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) en de [Nederlandse overheid](https://data.overheid.nl/en/ondersteuning/open-data/dcat).
 
 Dit datamodel kan in LinkML worden opgesteld met expliciete referenties naar de gebruikte termen uit de gewenste standaarden.
 
