@@ -66,11 +66,8 @@ Er is veel reeds verricht werk voor hoe URI's op te stellen, zowel nationaal als
 ##### Deliverables
 
 * Documenten waarin beschreven staat wat de URI-strategie is voor:
-  
    * profielen;
-  
    * dataproducten;
-  
    * logische informatiemodellen van dataproducten.
 
 ### Bruikbaarheid vergroten van referentiemodellen
@@ -114,10 +111,6 @@ Ook voor CGMES zijn LinkML-schema's gegenereerd. Vergelijkbaar met de uitleg voo
 ##### Deliverables
 
 - LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten.
-
----
-
-
 
 #### Netbeheer Nederland-begrippenkader
 
