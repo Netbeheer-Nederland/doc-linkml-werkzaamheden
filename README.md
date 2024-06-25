@@ -30,13 +30,13 @@ Nog meer hulp kan worden verkregen door het gebruik van de LinkML Profiler. Dit 
 
 ### Vastlegging van dataproducten
 
-TODO.
+TODO. (Refereer aan plaatje.)
 
 #### :ballot_box_with_check: Gestandaardiseerde, formele beschrijving van dataproducten
 
 ##### Omschrijving
 
-De definitie van wat een dataproduct is dient formeel vastgelegd te worden door een datamodel op te stellen op basis van een referentiestandaard als [DCAT](https://www.w3.org/TR/vocab-dcat-3/) of DX-PROF. In het bijzonder kan gekeken worden naar reeds bestaande toepassingsprofielen op basis van DCAT gemaakt door de [EU](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) en de [Nederlandse overheid](https://data.overheid.nl/en/ondersteuning/open-data/dcat).
+De definitie van wat een dataproduct is dient formeel vastgelegd te worden door een datamodel op te stellen op basis van een referentiestandaard als [DCAT](https://www.w3.org/TR/vocab-dcat-3/) of DX-PROF. In het bijzonder kan gekeken worden naar reeds bestaande toepassingsprofielen (application profiles, of AP) op basis van DCAT gemaakt door de [EU](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) en de [Nederlandse overheid](https://data.overheid.nl/en/ondersteuning/open-data/dcat).
 
 Een machineleesbaar, formeel model:
 
@@ -48,28 +48,59 @@ Dit datamodel kan in LinkML worden opgesteld met expliciete referenties naar de 
 
 Aanvullend dient mensvriendelijke documentatie te worden geschreven over wat een dataproduct is. Voor de hand ligt om gegenereerde documentatie te daarmee verrijken.
 
-###### Deliverables
+##### Deliverables
 
 - een op standaarden gebaseerde formele beschrijving in de vorm van een logisch informatiemodel van wat een wat een dataproduct is;
 - (mensvriendelijke) documentatie.
 
+#### :ballot_box_with_check: URI-strategie voor dataproducten en profielen
 
+##### Omschrijving
 
-#### URI-strategie voor dataproducten en de erbij horende logische informatiemodellen
+Dataproducten, de daarbij horende logische informatiemodellen, profielen en wellicht zelfs profielgroepen dienen globaal identificeerbaar te zijn via URI's. Dit maakt mogelijk ze te catalogiseren en eenduidig naar ze te verwijzen, wat bijvoorbeeld cruciaal is voor datamanagement en datagovernance.
 
-### Bruikbaarheid vergroten van conceptuele informatiemodellen en begrippenmodellen
+Het is daarbij van belang de volgende nuance te belichten. Stel, in een LinkML-schema definieer ik een klasse met zekere beperkingesregels, waarbij ik een (semantische) verwijzing naar een klasse in een referentiemodel opneem. Merk dan op dat de beperkende klassedefinitie in LinkML een andere resource is dan de klasse waarnaar wezen wordt, en dat beide dus een andere URI hebben.
 
-#### CIM
+Er is veel reeds verricht werk voor hoe URI's op te stellen, zowel nationaal als internationaal. Het is wijsheid op dat werk voort te borduren.
+
+##### Deliverables
+
+* Documenten waarin beschreven staat wat de URI-strategie is voor:
+  
+   * profielen;
+  
+   * dataproducten;
+  
+   * logische informatiemodellen van dataproducten.
+
+### Bruikbaarheid vergroten van referentiemodellen
+
+TODO.
+
+#### :ballot_box_with_check: CIM
+
+##### Omschrijving
+
+Het CIM is effectief een gestructureerd vocabulair waarin decennialange domeinexpertise is vastgelegd. Helaas is de bruikbaarheid van dit informatiemodel belemmerd doordat het informatiemodel beheerd wordt in een commerciële applicatie waar interoperabiliteit niet voor de hand ligt.
+
+Verder is de documentatie van het CIM niet gebruiksvriendelijk, met name niet voor hen die niet gewend zijn aan het doorlezen van formele specificaties.
+
+##### Taken
 
 * LinkML-schema's voor het CIM.
-   * Hier is een stevig begin aan gemaakt. De schema's zijn hier te vinden.
+
+*  * Hier is een stevig begin aan gemaakt. De schema's zijn hier te vinden.
    * De correctheid en compleetheid van de schema's dient verder te worden verbeterd.
    * De gemaakte aannames en ervaren uitdagingen bij het genereren van de schema's moeten nog worden gedocumenteerd.
    * Metadata als versieinformatie dient nog te worden verrijkt.
+
 * Hoogwaardige documentatie.
+  
    * Webdocumentatie gebaseerd op de documentatiegenerator van LinkML.
    * Interactieve graafvisualisatie.
+
 * Dereferenceable URI's.
+  
    * URI's dereferenceable maken zodat de definitie en documentatie van de termen via standaard HTTP-verzoeken op te vragen is. Dit zal in samenwerking met mensen uit de CIM-gemeenschap.
 
 #### CGMES
