@@ -28,7 +28,7 @@ Nog meer hulp kan worden verkregen door het gebruik van de LinkML Profiler. Dit 
 
 ## Werkzaamheden
 
-### Vastlegging van dataproducten
+### Beschrijven, beheersen en beheren van dataproducten
 
 TODO. (Refereer aan plaatje.)
 
@@ -53,11 +53,11 @@ Aanvullend dient mensvriendelijke documentatie te worden geschreven over wat een
 - een op standaarden gebaseerde formele beschrijving in de vorm van een logisch informatiemodel van wat een wat een dataproduct is;
 - (mensvriendelijke) documentatie.
 
-#### :ballot_box_with_check: URI-strategie voor dataproducten en profielen
+#### :ballot_box_with_check: URI-strategie voor dataproducten en verscheidene typen modellen
 
 ##### Omschrijving
 
-Dataproducten, de daarbij horende logische informatiemodellen, profielen en wellicht zelfs profielgroepen dienen globaal identificeerbaar te zijn via URI's. Dit maakt mogelijk ze te catalogiseren en eenduidig naar ze te verwijzen, wat bijvoorbeeld cruciaal is voor datamanagement en datagovernance.
+Ter bevordering van de FAIR-principes is het van belang dataproducten en alle voorkomende typen informatiemodellen en de erin voorkomende elementen van een URI te voorzien. Dit maakt eenduidige verwijzing mogelijk, wat cruciaal is voor o.a. datamanagement en datagovernance.
 
 Het is daarbij van belang de volgende nuance te belichten. Stel, in een LinkML-schema definieer ik een klasse met zekere beperkingesregels, waarbij ik een (semantische) verwijzing naar een klasse in een referentiemodel opneem. Merk dan op dat de beperkende klassedefinitie in LinkML een andere resource is dan de klasse waarnaar wezen wordt, en dat beide dus een andere URI hebben.
 
@@ -65,10 +65,13 @@ Er is veel reeds verricht werk voor hoe URI's op te stellen, zowel nationaal als
 
 ##### Deliverables
 
-* Documenten waarin beschreven staat wat de URI-strategie is voor:
-   * profielen;
+* Documenten waarin beschreven staat wat de URI-strategie is voor de volgende typen modellen en elementen daarin:
    * dataproducten;
-   * logische informatiemodellen van dataproducten.
+   * profielen en evt. profielgroepen;
+  
+   * logische informatiemodellen en (bijvoorbeeld van dataproducten);
+   * conceptuele informatiemodellen;
+   * begrippenmodellen.
 
 ### Bruikbaarheid vergroten van referentiemodellen
 
@@ -106,39 +109,103 @@ In de filosofie van Linked Data is het idee om URI's dereferenceable te maken zo
 
 #### :ballot_box_with_check: CGMES: LinkML-schema's verbeteren
 
+##### Omschrijving
+
 Ook voor CGMES zijn LinkML-schema's gegenereerd. Vergelijkbaar met de uitleg voor het CIM hierboven, geldt dat de kwaliteit van de schema's mag worden verbeterd, alsook dat de gemaakte aannames en ervaren uitdagingen bij het genereren van de schema's mogen worden gedocumenteerd en de metadata mag worden verrijkt.
 
 ##### Deliverables
 
 - LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten.
 
-#### Netbeheer Nederland-begrippenkader
+#### :ballot_box_with_check: URI's voor Netbeheer Nederland-begrippenkader formaliseren
 
-* URI-strategie opstellen.
-* Nieuwe URI's toekennen aan de begrippen.
+##### Omschrijving
+
+Gebruikmakende van de [URI-strategie](#:ballot_box_with_check: URI-strategie voor dataproducten en verscheidene typen modellen) dienen de URI's van de begrippen(modellen) aangepast te worden.
+
+Verder is het wenselijk de URI's dereferenceable te maken. Zie voor meer details de uitleg onder [Dereferenceable URI's](#Dereferenceable URI's).
+
+##### Deliverables
+
+* Nieuwe URI's toekennen aan de begrippen en schema's.
+
 * URI's dereferenceable maken zodat de definitie en documentatie van de begrippen via standaard HTTP-verzoeken op te vragen is.
 
-### Profileren van (referentie)schema's
+---
 
-Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven is.
+### Hulpmiddelen bij het opstellen van dataproducten en profielen
 
-#### Uitbreiden en verbeteren van LinkML Profiler.
+TODO. (Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven is.)
 
-* Functionaliteiten uitbreiden.
-* Softwarekwaliteit verbeteren.
+#### :ballot_box_with_check: Uitbreiden en verbeteren van LinkML Profiler
 
-#### Grafische web-ui voor LinkML Profiler
+##### Omschrijving
 
-* Frontend bouwen.
-* Backend bouwen.
+De LinkML Profiler is een CLI-applicatie geschreven in Python waarmee eenvoudig een selectie uit een gegeven LinkML-schema kan worden gemaakt door aan te geven welke klassen interessant zijn. Dit levert een nieuw LinkML-schema op dat óf as-is gebruikt kan worden, óf verder uitgebreid of aangepast kan worden indien wenselijk.
 
-### Bouwen van dataproducten en data-applicaties m.b.v. LinkML
+###### Nieuwe features
+
+De huidige versie van de profiler is nog relatief beperkt in de aangeboden features, maar nu al bewijst het een krachtig hulpmiddel in het modelleren op basis van CIM en CGMES. Zodra de software intensiever gebruikt wordt en ook door meerdere mensen, is te verwachten dat er feature requests zullen komen. Om deze op te pakken is tijd en mankracht nodig.
+
+###### Toegankelijkheid en gebruiksgemak verbeteren
+
+Het installeren van de CLI-applicatie is complex. De gebruiker dient over een Python-installatie te beschikken op diens systeem (en wél een compatibele versie) en de rechten en kennis te bezitten om virtual environments aan te kunnen maken om library's te installeren.
+
+Een voor de hand liggende verbetering is een web-API bouwen die de functionaliteit van de profiler aanbiedt. Eigenaarschap en het serveren van de dienst dient dan tevens belegd te worden.
+
+Een andere interessante optie is een herimplementatie van de CLI-applicatie in een andere programmeertaal waarbij het mogelijk is om te compileren naar binary executables. Tevens zal dit de performance ten gunste komen.
+
+###### Grafische web-ui voor LinkML Profiler
+
+Om het gebruiksgemak vele malen te vergroten is een grafische interface van groot belang. Een web-ui in bijvoorbeeld de vorm van een PWA is een geschikte keuze, omdat de applicatie daarmee crossplatform is en geen installatie vereist. Ook hier geldt dat eigenaarschap en het serveren van de dienst belegd dient te worden.
+
+##### Deliverables
+
+M.b.t. de LinkML Profiler:
+
+* Vereenvoudigde installatie en gebruik van de CLI-applicatie;
+
+* Een grafische web-ui;
+
+* Verrijkte featureset.
+
+#### :ballot_box_with_check: Editor-extensies voor het werken met LinkML-schema's
+
+##### Omschrijving
+
+LinkML-schema's zijn in YAML geschreven, en aangezien er van het LinkML-metamodel ook YAML- en JSON-serializatie bestaat is het mogelijk om in editors en IDE's gebruik te maken van features als syntactische checks en autocompletion. Hoewel dit handig is, is deze hulp erg beperkt. Wat kunnen we nog meer bedenken?
+
+###### URI-autocompletion vanuit andere modellen
+
+Wat enorm krachtig zou zijn is de mogelijkheid om URI-autocompletion te krijgen vanuit andere modellen, met name referentiemodellen als het CIM en NBNL-begrippenkader. Dit maakt het een stuk eenvoudiger en minder foutgevoelig om semantische verwijzingen te leggen.
+
+Hoe op te geven vanuit welke modellen autocompletion wordt aangeboden is nader te onderzoeken. Één optie is om in ieder geval te kijken of iets slims gedaan kan worden met de prefixdeclaraties en imports van het schema.
+
+###### Profileren van schema's
+
+De profileerfunctionaliteit van de LinkML Profiler kan geïntegreerd worden in de editor-extensie. Dit maakt mogelijk om direct vanuit de editor op basis van een opgegeven klasse een geheel deel van een schema te kopiëren.
+
+###### Opmerkingen over technische invulling
+
+Indien mogelijk en niet te beperkend, is het interessant om te onderzoeken of een oplossing kan worden verzonnen die editoragnostisch is. Zo kan een languageserverimplementatie een interessante optie zijn. Indien toch een vaste editor gekozen gaat worden, is het vermoedelijk verstandig een gratis en populaire editor te nemen, zoals VS Code. Tot slot is ook het realiseren van een eigen web-based editor een optie, al zou ik dan eerder kijken naar een VS Code Remote Development-opzet.
+
+Verder kan worden overwogen om een diversiteit aan technische typen bronnen voor term-autocompletion te ondersteunen (zoals LinkML-schema's, RDF-grafen en SPARQL-endpoints), en hoe om te gaan met lokale vs. remote beschikbare modellen.
+
+##### Deliverables
+
+* Een editorextensie die een rijkere developerexperience geeft voor het schrijven van LinkML-schema's.
+  
+   * Rijkere autocompletion vanuit dynamisch op te geven modellen.
+  
+   * Mogelijkheid om te profileren zoals met de LinkML Profiler, vermoedelijk gebruikmakend daarvan.
 
 
 
 ---
 
+### Bouwen van dataproducten en data-applicaties m.b.v. LinkML
 
+---
 
 #### Eenduidige werkwijze en heldere documentatie voor het maken en beheren van dataproducten
 
