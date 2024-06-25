@@ -32,7 +32,7 @@ Nog meer hulp kan worden verkregen door het gebruik van de LinkML Profiler. Dit 
 
 TODO.
 
-#### Gestandaardiseerde, formele beschrijving van dataproducten
+#### :ballot_box_with_check: Gestandaardiseerde, formele beschrijving van dataproducten
 
 ##### Omschrijving
 
