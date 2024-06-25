@@ -77,7 +77,7 @@ Er is veel reeds verricht werk voor hoe URI's op te stellen, zowel nationaal als
 
 TODO.
 
-#### :ballot_box_with_check: CIM
+#### :ballot_box_with_check: CIM: LinkML-schema's en documentatie verbeteren
 
 ##### Omschrijving
 
@@ -85,31 +85,39 @@ Het CIM is effectief een gestructureerd vocabulair waarin decennialange domeinex
 
 Verder is de documentatie van het CIM niet gebruiksvriendelijk, met name niet voor hen die niet gewend zijn aan het doorlezen van formele specificaties.
 
-##### Taken
+###### Verbetering kwaliteit van LinkML-schema's
 
-* LinkML-schema's voor het CIM.
+Er is reeds werk verricht om het CIM in LinkML-schema's te representeren. De correctheid en compleetheid van de schema's dient verder te worden verbeterd. Daarbij is het van belang de gemaakte aannames en ervaren uitdagingen bij het genereren van de schema's te documenteren. Tot slot mogen de schema's met meer metadata verrijkt worden zoals versieinformatie.
 
-*  * Hier is een stevig begin aan gemaakt. De schema's zijn hier te vinden.
-   * De correctheid en compleetheid van de schema's dient verder te worden verbeterd.
-   * De gemaakte aannames en ervaren uitdagingen bij het genereren van de schema's moeten nog worden gedocumenteerd.
-   * Metadata als versieinformatie dient nog te worden verrijkt.
+###### Gebruiksvriendelijke documentatie
 
-* Hoogwaardige documentatie.
-  
-   * Webdocumentatie gebaseerd op de documentatiegenerator van LinkML.
-   * Interactieve graafvisualisatie.
+Zoals gezegd is de huidige documentatie van het informatiemodel niet gebruiksvriendelijk. Het zou helpen webdocumentatie te verzorgen, waarbij als basis de statisch gegenereerde documentatiebestanden van LinkML kunnen worden genomen.
 
-* Dereferenceable URI's.
-  
-   * URI's dereferenceable maken zodat de definitie en documentatie van de termen via standaard HTTP-verzoeken op te vragen is. Dit zal in samenwerking met mensen uit de CIM-gemeenschap.
+Indien gewenst kunnen andere, visuele vormen van documentatie worden verkend. Denk hierbij met name aan een interactieve graafvisualisatie, die het perspectief van ontdekken vanuit een bekend startpunt benadrukt.
 
-#### CGMES
+###### Dereferenceable URI's
 
-* LinkML-schema's voor CGMES.
-   * Hier is een stevig begin aan gemaakt. De schema's zijn hier te vinden.
-   * De correctheid en compleetheid van de schema's dient verder te worden verbeterd.
-   * De gemaakte aannames en ervaren uitdagingen bij het genereren van de schema's moeten nog worden gedocumenteerd.
-   * Metadata als versieinformatie dient nog te worden verrijkt.
+In de filosofie van Linked Data is het idee om URI's dereferenceable te maken zodat de definitie en documentatie van de termen via standaard HTTP-verzoeken op te vragen is. Dit zal gerealiseerd worden in samenwerking met mensen uit de CIM-gemeenschap.
+
+##### Deliverables
+
+* LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten;
+
+* Gebruiksvriendelijke documentatie, publiek beschikbaar via het WWW;
+
+* Dereferenceable URI's teneinde termen zelfbeschrijvend te maken, waarbij de implementatie content-negotiation ondersteunt zodat zowel een machineleesbare als mensvriendelijke representatie van de beschrijving opgehaald kan worden.
+
+#### :ballot_box_with_check: CGMES: LinkML-schema's verbeteren
+
+Ook voor CGMES zijn LinkML-schema's gegenereerd. Vergelijkbaar met de uitleg voor het CIM hierboven, geldt dat de kwaliteit van de schema's mag worden verbeterd, alsook dat de gemaakte aannames en ervaren uitdagingen bij het genereren van de schema's mogen worden gedocumenteerd en de metadata mag worden verrijkt.
+
+##### Deliverables
+
+- LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten.
+
+---
+
+
 
 #### Netbeheer Nederland-begrippenkader
 
@@ -131,74 +139,26 @@ Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven
 * Frontend bouwen.
 * Backend bouwen.
 
-### Gestandaardiseerd definiëren van wat een dataproduct is
-
 ### Bouwen van dataproducten en data-applicaties m.b.v. LinkML
 
-## Usecases
 
-Het definiëren van de NBNL Profile Group is de usecase
 
-### Vastlegging formele definitie van wat een dataproduct is
+---
 
-#### Omschrijving
 
-TODO.
 
-#### Deliverables
+#### Eenduidige werkwijze en heldere documentatie voor het maken en beheren van dataproducten
+
+##### Omschrijving
 
 TODO.
 
-#### Acceptatiecriteria
+##### Deliverables
 
 TODO.
 
-#### Deliverables
-
-* 
-
-#### Acceptatiecriteria
+##### Acceptatiecriteria
 
 TODO.
 
-### Eenduidige werkwijze en heldere documentatie voor het maken en beheren van dataproducten
-
-#### Omschrijving
-
-TODO.
-
-#### Deliverables
-
-TODO.
-
-#### Acceptatiecriteria
-
-TODO.
-
-### Verbeterde interactieve documentatie van het CIM
-
-#### Omschrijving
-
-TODO.
-
-#### Deliverables
-
-TODO.
-
-#### Acceptatiecriteria
-
-TODO.
-
-### Verbeterde interactieve documentatie van het CIM
-
-#### Omschrijving
-
-TODO.
-
-#### Deliverables
-
-TODO.
-
-#### Acceptatiecriteria
-
-TODO.
+### 
