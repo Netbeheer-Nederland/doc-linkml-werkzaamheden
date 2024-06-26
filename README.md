@@ -16,7 +16,7 @@ Een onmiskenbaar en belangrijk onderdeel van een dataproduct is het logisch info
 
 Verder komt LinkML met een ecosysteem aan software dat ondersteunt bij het maken van dataproducten, met name een tal van generatoren die mogelijk maken om fysieke datamodellen, documentatie en overige artefacten te genereren. Dit is enorm behulpzaam bij het realiseren van de technische implementatie van de dataservice die het dataproduct aan gaat bieden.
 
-Wellicht de grootste uitdagingen komen echter vanuit het informatiemodelleringsperspectief. Het domein is complex en het modelleren van een usecase is moeilijk. Bovendien is het wenselijk dit FAIR te doen, wat bijvoorbeeld vraagt om termen uit referentiemodellen te gebruiken en een doordachte URI-strategie voor globale identificatie te hanteren.
+Wellicht de grootste uitdagingen komen echter vanuit het informatiemodelleringsperspectief. Het domein is complex en het modelleren van een usecase is moeilijk. Bovendien is het wenselijk dit FAIR te doen, wat bijvoorbeeld vraagt om termen uit referentiemodellen te gebruiken en een doordachte IRI-strategie voor globale identificatie te hanteren.
 
 Om het modelleren van usecases eenvoudiger te maken zijn een aantal referentiemodellen (zoals het CIM en de CGMES-profielgroep) geconverteerd naar LinkML-schema's, zodat op basis daarvan schema's kunnen worden opgesteld waaraan vervolgens structuur en beperkingen kunnen worden toegevoegd om uitdrukking te geven aan de usecase.
 
@@ -32,7 +32,7 @@ Nog meer hulp kan worden verkregen door het gebruik van de LinkML Profiler. Dit 
 
 TODO. (Refereer aan plaatje.)
 
-#### Gestandaardiseerde, formele beschrijving van dataproducten
+#### Formele beschrijving van wat een FAIR dataproduct is
 
 ##### Omschrijving
 
@@ -48,33 +48,31 @@ Dit datamodel kan in LinkML worden opgesteld met expliciete referenties naar de 
 
 Aanvullend dient mensvriendelijke documentatie te worden geschreven over wat een dataproduct is. Voor de hand ligt om gegenereerde documentatie te daarmee verrijken.
 
+Tot slot dient er nog voorgeschreven te worden hoe het FAIR uitwisselen van (instantie)data dient te worden ingevuld. Hierbij speelt Linked Data een cruciale rol, waarbij middelen als JSON-LD het toegankelijk maken.
+
 ##### Deliverables
 
-- een op standaarden gebaseerde formele beschrijving in de vorm van een logisch informatiemodel van wat een wat een dataproduct is;
-- (mensvriendelijke) documentatie.
+- Een op standaarden gebaseerde formele beschrijving in de vorm van een logisch informatiemodel van wat een wat een dataproduct is;
+- Mensvriendelijke documentatie;
+- Vastlegging van de manier waarop met Linked Data uitwisseling van FAIR data mogelijk wordt gemaakt.
 
-#### URI-strategie voor dataproducten en verscheidene typen modellen
+#### IRI-strategie voor dataproducten en verscheidene typen modellen
 
 ##### Omschrijving
 
-Ter bevordering van de FAIR-principes is het van belang dataproducten en alle voorkomende typen informatiemodellen en de erin voorkomende elementen van een URI te voorzien. Dit maakt eenduidige verwijzing mogelijk, wat cruciaal is voor o.a. datamanagement en datagovernance.
+Ter bevordering van de FAIR-principes is het van belang dataproducten en alle voorkomende typen informatiemodellen en de erin voorkomende elementen van een IRI te voorzien. Dit maakt eenduidige verwijzing mogelijk, wat cruciaal is voor o.a. datamanagement en datagovernance.
 
-Het is daarbij van belang de volgende nuance te belichten. Stel, in een LinkML-schema definieer ik een klasse met zekere beperkingesregels, waarbij ik een (semantische) verwijzing naar een klasse in een referentiemodel opneem. Merk dan op dat de beperkende klassedefinitie in LinkML een andere resource is dan de klasse waarnaar wezen wordt, en dat beide dus een andere URI hebben.
+Het is daarbij van belang de volgende nuance te belichten. Stel, in een LinkML-schema definieer ik een klasse met zekere beperkingesregels, waarbij ik een (semantische) verwijzing naar een klasse in een referentiemodel opneem. Merk dan op dat de beperkende klassedefinitie in LinkML een andere resource is dan de klasse waarnaar wezen wordt, en dat beide dus een andere IRI hebben.
 
-Er is veel reeds verricht werk voor hoe URI's op te stellen, zowel nationaal als internationaal. Het is wijsheid op dat werk voort te borduren.
+Er is veel reeds verricht werk voor hoe IRI's op te stellen, zowel nationaal als internationaal. Het is wijsheid op dat werk voort te borduren.
 
 ##### Deliverables
 
-* Documenten waarin beschreven staat wat de URI-strategie is voor de volgende typen modellen en elementen daarin:
-  
+* Documenten waarin beschreven staat wat de IRI-strategie is voor de volgende typen modellen en elementen daarin:
    * dataproducten;
-  
    * profielen en evt. profielgroepen;
-  
    * logische informatiemodellen en (bijvoorbeeld van dataproducten);
-  
    * conceptuele informatiemodellen;
-  
    * begrippenmodellen.
 
 ### Bruikbaarheid vergroten van referentiemodellen
@@ -99,17 +97,15 @@ Zoals gezegd is de huidige documentatie van het informatiemodel niet gebruiksvri
 
 Indien gewenst kunnen andere, visuele vormen van documentatie worden verkend. Denk hierbij met name aan een interactieve graafvisualisatie, die het perspectief van ontdekken vanuit een bekend startpunt benadrukt.
 
-###### Dereferenceable URI's
+###### Dereferenceable IRI's
 
-In de filosofie van Linked Data is het idee om URI's dereferenceable te maken zodat de definitie en documentatie van de termen via standaard HTTP-verzoeken op te vragen is. Dit zal gerealiseerd worden in samenwerking met mensen uit de CIM-gemeenschap.
+In de filosofie van Linked Data is het idee om IRI's dereferenceable te maken zodat de definitie en documentatie van de termen via standaard HTTP-verzoeken op te vragen is. Dit zal gerealiseerd worden in samenwerking met mensen uit de CIM-gemeenschap.
 
 ##### Deliverables
 
 * LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten;
-
 * Gebruiksvriendelijke documentatie, publiek beschikbaar via het WWW;
-
-* Dereferenceable URI's teneinde termen zelfbeschrijvend te maken, waarbij de implementatie content-negotiation ondersteunt zodat zowel een machineleesbare als mensvriendelijke representatie van de beschrijving opgehaald kan worden.
+* Dereferenceable IRI's teneinde termen zelfbeschrijvend te maken, waarbij de implementatie content-negotiation ondersteunt zodat zowel een machineleesbare als mensvriendelijke representatie van de beschrijving opgehaald kan worden.
 
 #### CGMES: LinkML-schema's verbeteren
 
@@ -121,19 +117,18 @@ Ook voor CGMES zijn LinkML-schema's gegenereerd. Vergelijkbaar met de uitleg voo
 
 - LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten.
 
-#### URI's voor Netbeheer Nederland-begrippenkader formaliseren
+#### IRI's voor Netbeheer Nederland-begrippenkader formaliseren
 
 ##### Omschrijving
 
-Gebruikmakende van de [URI-strategie](#URI-strategie voor dataproducten en verscheidene typen modellen) dienen de URI's van de begrippen(modellen) aangepast te worden.
+Gebruikmakende van de [IRI-strategie](#IRI-strategie voor dataproducten en verscheidene typen modellen) dienen de IRI's van de begrippen(modellen) aangepast te worden.
 
-Verder is het wenselijk de URI's dereferenceable te maken. Zie voor meer details de uitleg onder [Dereferenceable URI's](#Dereferenceable URI's).
+Verder is het wenselijk de IRI's dereferenceable te maken. Zie voor meer details de uitleg onder [Dereferenceable IRI's](#Dereferenceable IRI's).
 
 ##### Deliverables
 
-* Nieuwe URI's toekennen aan de begrippen en schema's.
-
-* URI's dereferenceable maken zodat de definitie en documentatie van de begrippen via standaard HTTP-verzoeken op te vragen is.
+* Nieuwe IRI's toekennen aan de begrippen en schema's.
+* IRI's dereferenceable maken zodat de definitie en documentatie van de begrippen via standaard HTTP-verzoeken op te vragen is.
 
 ---
 
@@ -141,7 +136,7 @@ Verder is het wenselijk de URI's dereferenceable te maken. Zie voor meer details
 
 TODO. (Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven is.)
 
-#### Uitbreiden en verbeteren van LinkML Profiler
+#### LinkML Profiler uitbreiden en toegankelijker maken
 
 ##### Omschrijving
 
@@ -166,7 +161,6 @@ Om het gebruiksgemak vele malen te vergroten is een grafische interface van groo
 ##### Deliverables
 
 * CLI-applicatie van de LinkML Profiler met vereenvoudigde installatie en verbeterde gebruiksvriendelijkheid;
-
 * Web-UI-frontend voor de LinkML Profiler;
 
 Alle software is opensource en maakt geen domeinspecifieke aannames.
@@ -177,9 +171,9 @@ Alle software is opensource en maakt geen domeinspecifieke aannames.
 
 LinkML-schema's zijn in YAML geschreven, en aangezien er van het LinkML-metamodel ook YAML- en JSON-serializatie bestaat is het mogelijk om in editors en IDE's gebruik te maken van features als syntactische checks en autocompletion. Hoewel dit handig is, is deze hulp erg beperkt. Wat kunnen we nog meer bedenken?
 
-###### URI-autocompletion vanuit andere modellen
+###### IRI-autocompletion vanuit andere modellen
 
-Wat enorm krachtig zou zijn is de mogelijkheid om URI-autocompletion te krijgen vanuit andere modellen, met name referentiemodellen als het CIM en NBNL-begrippenkader. Dit maakt het een stuk eenvoudiger en minder foutgevoelig om semantische verwijzingen te leggen.
+Wat enorm krachtig zou zijn is de mogelijkheid om IRI-autocompletion te krijgen vanuit andere modellen, met name referentiemodellen als het CIM en NBNL-begrippenkader. Dit maakt het een stuk eenvoudiger en minder foutgevoelig om semantische verwijzingen te leggen.
 
 Hoe op te geven vanuit welke modellen autocompletion wordt aangeboden is nader te onderzoeken. Één optie is om in ieder geval te kijken of iets slims gedaan kan worden met de prefixdeclaraties en imports van het schema.
 
@@ -196,14 +190,11 @@ Verder kan worden overwogen om een diversiteit aan technische typen bronnen voor
 ##### Deliverables
 
 * Een editorextensie die een rijkere developerexperience geeft voor het schrijven van LinkML-schema's.
-  
    * Rijkere autocompletion vanuit dynamisch op te geven modellen;
-  
    * Mogelijkheid om te profileren zoals met de LinkML Profiler, vermoedelijk gebruikmakend daarvan;
-  
    * Indien mogelijk is de extensie opensource en worden er geen domeinspecifieke aannames gemaakt.
 
-### Bouwen van dataproducten en data-applicaties m.b.v. LinkML
+### Technisch realiseren van dataproducten
 
 #### Grafische UI bouwen voor de LinkML-generatoren
 
@@ -216,7 +207,6 @@ Om de generatoren voor eindgebruikers toegankelijker te maken is het een goed id
 ##### Deliverables
 
 * UI (frontend) voor de LinkML-generatoren.
-  
    * De applicatie is opensource en maakt geen domeinspecifieke aannames.
 
 #### Procesbeschrijving, handleiding en voorbeelduitwerking van het bouwen van een dataproduct
@@ -240,9 +230,7 @@ De ambitie is om zoveel mogelijk te leren vanuit de praktijk, bijvoorbeeld van h
 Ten aanzien van het maken van een dataproduct en alles wat erbij komt kijken:
 
 * gebruiksvriendelijke documenten zoals een handleiding en FAQ;
-
 * een voorbeelduitwerking van een dataproduct gepubliceerd op GitHub;
-
 * evt. een formele procesbeschrijving.
 
 ### Technische support en opensourcebijdragen
@@ -270,7 +258,6 @@ Verder kan software die door ons ontwikkeld wordt - waarin geen domeinspecifieke
 ##### Deliverables
 
 * Meehelpen verbeteren van LinkML door betrokken te blijven bij gesprekken en meehelpen met doorontwikkelen;
-
 * Ontwikkelde software die relevant is voor anderen opensource beschikbaar stellen aan de LinkML-gemeenschap.
 
 #### 
