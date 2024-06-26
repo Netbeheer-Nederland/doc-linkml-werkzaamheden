@@ -4,7 +4,7 @@
 
 In dit document worden werkzaamheden voorgesteld teneinde het maken van FAIR dataproducten mogelijk te maken op uniforme, gestandaardiseerde en toegankelijke wijze. Hierbij zal LinkML als middel centraal staan.
 
-Het werk omvat het beschrijven van definities, processen en werkwijzen; het bouwen en uitbreiden van benodigde software; en het verbeteren van referentiemodellen en de documentatie daarvan. Zie [Werkzaamheden](#Werkzaamheden) voor meer details.
+Het werk omvat het beschrijven van definities, processen en werkwijzen; het bouwen en uitbreiden van benodigde software; en het verbeteren van (de beschikbaarheid van) referentiemodellen en de documentatie daarvan. Zie [Werkzaamheden](#Werkzaamheden) voor meer details.
 
 Dit werk zal zich direct nuttig maken bij het opstellen van de [NBNL-profielgroep](https://github.com/Netbeheer-Nederland/doc-design-wg-sem-int), alsook zich laten voeden door de concrete vragen en uitdagingen die daar ervaren zullen worden.
 
@@ -32,7 +32,7 @@ Nog meer hulp kan worden verkregen door het gebruik van de LinkML Profiler. Dit 
 
 TODO. (Refereer aan plaatje.)
 
-#### :ballot_box_with_check: Gestandaardiseerde, formele beschrijving van dataproducten
+#### Gestandaardiseerde, formele beschrijving van dataproducten
 
 ##### Omschrijving
 
@@ -53,7 +53,7 @@ Aanvullend dient mensvriendelijke documentatie te worden geschreven over wat een
 - een op standaarden gebaseerde formele beschrijving in de vorm van een logisch informatiemodel van wat een wat een dataproduct is;
 - (mensvriendelijke) documentatie.
 
-#### :ballot_box_with_check: URI-strategie voor dataproducten en verscheidene typen modellen
+#### URI-strategie voor dataproducten en verscheidene typen modellen
 
 ##### Omschrijving
 
@@ -66,18 +66,22 @@ Er is veel reeds verricht werk voor hoe URI's op te stellen, zowel nationaal als
 ##### Deliverables
 
 * Documenten waarin beschreven staat wat de URI-strategie is voor de volgende typen modellen en elementen daarin:
+  
    * dataproducten;
+  
    * profielen en evt. profielgroepen;
   
    * logische informatiemodellen en (bijvoorbeeld van dataproducten);
+  
    * conceptuele informatiemodellen;
+  
    * begrippenmodellen.
 
 ### Bruikbaarheid vergroten van referentiemodellen
 
 TODO.
 
-#### :ballot_box_with_check: CIM: LinkML-schema's en documentatie verbeteren
+#### CIM: LinkML-schema's en documentatie verbeteren
 
 ##### Omschrijving
 
@@ -107,7 +111,7 @@ In de filosofie van Linked Data is het idee om URI's dereferenceable te maken zo
 
 * Dereferenceable URI's teneinde termen zelfbeschrijvend te maken, waarbij de implementatie content-negotiation ondersteunt zodat zowel een machineleesbare als mensvriendelijke representatie van de beschrijving opgehaald kan worden.
 
-#### :ballot_box_with_check: CGMES: LinkML-schema's verbeteren
+#### CGMES: LinkML-schema's verbeteren
 
 ##### Omschrijving
 
@@ -117,11 +121,11 @@ Ook voor CGMES zijn LinkML-schema's gegenereerd. Vergelijkbaar met de uitleg voo
 
 - LinkML-schema's voor het CIM van een volwassenheidsniveau dat ze bruikbaar maakt voor het opstellen van profielen en dataproducten.
 
-#### :ballot_box_with_check: URI's voor Netbeheer Nederland-begrippenkader formaliseren
+#### URI's voor Netbeheer Nederland-begrippenkader formaliseren
 
 ##### Omschrijving
 
-Gebruikmakende van de [URI-strategie](#:ballot_box_with_check: URI-strategie voor dataproducten en verscheidene typen modellen) dienen de URI's van de begrippen(modellen) aangepast te worden.
+Gebruikmakende van de [URI-strategie](#URI-strategie voor dataproducten en verscheidene typen modellen) dienen de URI's van de begrippen(modellen) aangepast te worden.
 
 Verder is het wenselijk de URI's dereferenceable te maken. Zie voor meer details de uitleg onder [Dereferenceable URI's](#Dereferenceable URI's).
 
@@ -137,7 +141,7 @@ Verder is het wenselijk de URI's dereferenceable te maken. Zie voor meer details
 
 TODO. (Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven is.)
 
-#### :ballot_box_with_check: Uitbreiden en verbeteren van LinkML Profiler
+#### Uitbreiden en verbeteren van LinkML Profiler
 
 ##### Omschrijving
 
@@ -155,21 +159,19 @@ Een voor de hand liggende verbetering is een web-API bouwen die de functionalite
 
 Een andere interessante optie is een herimplementatie van de CLI-applicatie in een andere programmeertaal waarbij het mogelijk is om te compileren naar binary executables. Tevens zal dit de performance ten gunste komen.
 
-###### Grafische web-ui voor LinkML Profiler
+###### Grafische web-UI voor LinkML Profiler
 
-Om het gebruiksgemak vele malen te vergroten is een grafische interface van groot belang. Een web-ui in bijvoorbeeld de vorm van een PWA is een geschikte keuze, omdat de applicatie daarmee crossplatform is en geen installatie vereist. Ook hier geldt dat eigenaarschap en het serveren van de dienst belegd dient te worden.
+Om het gebruiksgemak vele malen te vergroten is een grafische interface van groot belang. Een web-UI in bijvoorbeeld de vorm van een PWA is een geschikte keuze, omdat de applicatie daarmee crossplatform is en geen installatie vereist. Ook hier geldt dat eigenaarschap en het serveren van de dienst belegd dient te worden.
 
 ##### Deliverables
 
-M.b.t. de LinkML Profiler:
+* CLI-applicatie van de LinkML Profiler met vereenvoudigde installatie en verbeterde gebruiksvriendelijkheid;
 
-* Vereenvoudigde installatie en gebruik van de CLI-applicatie;
+* Web-UI-frontend voor de LinkML Profiler;
 
-* Een grafische web-ui;
+Alle software is opensource en maakt geen domeinspecifieke aannames.
 
-* Verrijkte featureset.
-
-#### :ballot_box_with_check: Editor-extensies voor het werken met LinkML-schema's
+#### Editor-extensies bouwen voor het werken met LinkML-schema's
 
 ##### Omschrijving
 
@@ -195,30 +197,80 @@ Verder kan worden overwogen om een diversiteit aan technische typen bronnen voor
 
 * Een editorextensie die een rijkere developerexperience geeft voor het schrijven van LinkML-schema's.
   
-   * Rijkere autocompletion vanuit dynamisch op te geven modellen.
+   * Rijkere autocompletion vanuit dynamisch op te geven modellen;
   
-   * Mogelijkheid om te profileren zoals met de LinkML Profiler, vermoedelijk gebruikmakend daarvan.
-
-
-
----
+   * Mogelijkheid om te profileren zoals met de LinkML Profiler, vermoedelijk gebruikmakend daarvan;
+  
+   * Indien mogelijk is de extensie opensource en worden er geen domeinspecifieke aannames gemaakt.
 
 ### Bouwen van dataproducten en data-applicaties m.b.v. LinkML
 
----
-
-#### Eenduidige werkwijze en heldere documentatie voor het maken en beheren van dataproducten
+#### Grafische UI bouwen voor de LinkML-generatoren
 
 ##### Omschrijving
 
-TODO.
+De installatie en het gebruik van de LinkML-generatoren is omslachtig en foutgevoelig om dezelfde redenen als eerder uiteengezet voor de LinkML Profiler.
+
+Om de generatoren voor eindgebruikers toegankelijker te maken is het een goed idee om een UI te maken ervoor. Een web-UI ligt voor de hand, maar andere mogelijkheden kunnen verkend worden.
 
 ##### Deliverables
 
-TODO.
+* UI (frontend) voor de LinkML-generatoren.
+  
+   * De applicatie is opensource en maakt geen domeinspecifieke aannames.
 
-##### Acceptatiecriteria
+#### Procesbeschrijving, handleiding en voorbeelduitwerking van het bouwen van een dataproduct
 
-TODO.
+##### Omschrijving
 
-### 
+Er dienen hulpmiddelen beschikbaar te zijn voor het maken van dataproducten zodat teams zelfstandig op uniforme wijze dataproducten kunnen bouwen. Denk daarbij aan een handleiding die beschrijft wat te ondernemen stappen zijn en hoe deze uit te voeren. Dit dekt onderwerpen als het opstellen van logische informatiemodellen met LinkML, het profileren van referentiestandaarden als het CIM, hoe dataproducten te beheren in of naast de codebase van de voortbrengende  applicatie, enzovoorts.
+
+Daarnaast is het van belang om goede informatie aan te bieden over data-architectuur en informatiemodellering. Basale kennis van deze vakgebieden helpt teams begrijpen wat ze doen en waarom.
+
+Naast dergelijke gebruiksvriendelijke hulpmiddelen kan overwogen worden een formele procesbeschrijving te modelleren.
+
+Voor snelle naslag en troubleshooting kan een FAQ worden opgesteld.
+
+Voorbeelden doen soms wonderen, dus wellicht is het een goed idee om een voorbeeld- of templaterepository op GitHub te maken. De bovengenoemde documentatie zou eventueel ook daar geplaatst kunnen worden (in de README en/of wiki).
+
+De ambitie is om zoveel mogelijk te leren vanuit de praktijk, bijvoorbeeld van het maken van de NBNL-profielen en dataproducten die ontwikkeld worden binnen EDSN of RNB's.
+
+##### Deliverables
+
+Ten aanzien van het maken van een dataproduct en alles wat erbij komt kijken:
+
+* gebruiksvriendelijke documenten zoals een handleiding en FAQ;
+
+* een voorbeelduitwerking van een dataproduct gepubliceerd op GitHub;
+
+* evt. een formele procesbeschrijving.
+
+### Technische support en opensourcebijdragen
+
+#### Verlenen van technische hulp aan gebruikers
+
+##### Omschrijving
+
+Het maken van dataproducten, het gebruik van LinkML en op een bepaalde manier denken over informatiemodellering zal voor veel mensen niet zonder slag of staat gaan. Daarbij zullen er ongetwijfeld bugs ontdekt worden en technische problemen zich voordoen.
+
+Het is van belang tijd vrij te maken om hier aandacht aan te besteden.
+
+##### Deliverables
+
+* Vast aantal uur beschikbaar voor het verlenen van technische support en voor administratie zoals featurerequests;
+
+#### Meehelpen LinkML te verbeteren
+
+##### Omschrijving
+
+Het LinkML-ecosysteem is aardig groot en er valt nog veel toe te voegen en te verbeteren. Het is van belang in contact te blijven met het team achter LinkML, onze invloed uit te oefenen op de doorontwikkeling en bij te dragen aan het project waar we kunnen.
+
+Verder kan software die door ons ontwikkeld wordt - waarin geen domeinspecifieke aannames zijn gemaakt - opensource beschikbaar worden gesteld aan de LinkML-gemeenschap.
+
+##### Deliverables
+
+* Meehelpen verbeteren van LinkML door betrokken te blijven bij gesprekken en meehelpen met doorontwikkelen;
+
+* Ontwikkelde software die relevant is voor anderen opensource beschikbaar stellen aan de LinkML-gemeenschap.
+
+#### 
