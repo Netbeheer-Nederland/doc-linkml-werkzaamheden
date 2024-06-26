@@ -209,6 +209,23 @@ Om de generatoren voor eindgebruikers toegankelijker te maken is het een goed id
 * UI (frontend) voor de LinkML-generatoren.
    * De applicatie is opensource en maakt geen domeinspecifieke aannames.
 
+#### Bouwen en aanpassen van LinkML-generatoren
+
+##### Omschrijving
+
+De LinkML-generatoren zijn enorm waardevol voor het bouwen van dataproducten, maar soms:
+
+* is de kwaliteit van de uitvoer van de generator onvoldoende;
+* zijn aannames of gemaakte conversiekeuzes in de generator anders dan gewenst voor ons gebruik;
+* biedt een generator onvoldoende functionaliteit of opties;
+* ontbreekt een generator volledig.
+
+Zo kan het zijn dat we voor SQL DDL-code bepaalde modelleeraannames willen maken die aansluiten bij onze datawarehouses. Verder heeft LinkML geen generator voor Apache Avro-schema's, een veelgebruikt uitwisselingsstandaard voor streamingdata. Een dergelijke generator kan dan gebouwd worden, of zelfs een generator voor Avrotize-schema's, waarmee door gebruik van [`avrotize`](https://github.com/clemensv/avrotize) weer tal van fysieke datamodellen kunnen worden gegenereerd.
+
+##### Deliverables
+
+* Implementatie van LinkML-generatoren zodat alle door ons gewenste fysieke datamodellen ondersteund worden en van voldoende kwaliteit en rijkheid aan functionalitieit.
+
 #### Procesbeschrijving, handleiding en voorbeelduitwerking van het bouwen van een dataproduct
 
 ##### Omschrijving
