@@ -1,3 +1,4 @@
-# FAIR dataproducten maken met LinkML
+# Netbeheer Nederland &mdash; Specificaties
 
-Zie: TODO.
+* [FAIR dataproducten met LinkML](https://netbeheer-nederland.github.io/specs/fair-linkml)
+
