@@ -1,7 +1,9 @@
 body {
-  font-family: "Open Sans" !important;
+  font-family: "IBM Plex Serif" !important;
 }
 
-h3 {
-  margin: 0 !important;
+/*
+h1,h2,h3,h4,h5,h6 {
+  font-family: "IBM Plex Serif" !important;
 }
+*/

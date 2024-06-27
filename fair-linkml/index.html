@@ -10,7 +10,7 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
     <script class="remove">
       // All config options at https://respec.org/docs/
@@ -48,9 +48,9 @@
   <body>
     <h1 id="title">FAIR dataproducten maken met LinkML</h1>
     <section id="abstract" data-format="markdown">
-In dit document worden werkzaamheden voorgesteld teneinde het maken van FAIR dataproducten mogelijk te maken op uniforme, gestandaardiseerde en toegankelijke wijze. Hierbij zal LinkML als middel centraal staan.
+In dit document worden werkzaamheden voorgesteld teneinde het maken van [=FAIR=] dataproducten mogelijk te maken op uniforme, gestandaardiseerde en toegankelijke wijze. Hierbij zal LinkML als middel centraal staan.
 
-Het werkeomvat het beschrijven van definities, processen en werkwijzen; het bouwen en uitbreiden van benodigde software; en het verbeteren van (de beschikbaarheid van) referentiemodellen en de documentatie daarvan. Zie [[[#werkzaamheden]]] voor meer details.
+Het werk omvat het beschrijven van definities, processen en werkwijzen; het bouwen en uitbreiden van benodigde software; en het verbeteren van (de beschikbaarheid van) referentiemodellen en de documentatie daarvan. Zie [[[#werkzaamheden]]] voor meer details.
 
 Dit werk zal zich direct nuttig maken bij het opstellen van de [NBNL-profielgroep](https://github.com/Netbeheer-Nederland/doc-design-wg-sem-int), alsook zich laten voeden door de concrete vragen en uitdagingen die daar ervaren zullen worden.
     </section>
@@ -59,16 +59,17 @@ Dit werk zal zich direct nuttig maken bij het opstellen van de [NBNL-profielgroe
 Work in progress.
 
 ### Accordering door stakeholders
+* Yun Wu
 * Ritger Teunissen
 * Tjeerd Schoemaker
 <p class="copyright"></p>
     </section>
-    <section id="executive-summary" class="" data-format="markdown">
+    <section id="executive-summary" data-format="markdown">
 ## Executive summary
 
 Alvorens dataproducten te kunnen maken is een formele vastlegging van wat onder een dataproduct verstaan wordt benodigd. Een formele beschrijving gebaseerd op een referentiemodel als DCAT of DX-PROF is daarbij wenselijk.
 
-Een onmiskenbaar en belangrijk onderdeel van een dataproduct is het logisch informatiemodel dat de structuur van de data erin beschrijft. Voor de vastlegging daarvan wordt LinkML gebruikt: een toegankelijke Linked Data-modelleertaal die mogelijkheden biedt om de betekenis van data expliciet te maken door verwijzingen naar referentiemodellen. Het is daarmee een uitermate geschikt middel om data FAIR mee te maken.
+Een onmiskenbaar en belangrijk onderdeel van een dataproduct is het [=logisch gegevensmodel=] dat de structuur van de data erin beschrijft. Voor de vastlegging daarvan wordt LinkML gebruikt: een toegankelijke Linked Data-modelleertaal die mogelijkheden biedt om de betekenis van data expliciet te maken door verwijzingen naar referentiemodellen. Het is daarmee een uitermate geschikt middel om data [=FAIR=] mee te maken.
 
 Verder komt LinkML met een ecosysteem aan software dat ondersteunt bij het maken van dataproducten, met name een tal van generatoren die mogelijk maken om fysieke datamodellen, documentatie en overige artefacten te genereren. Dit is enorm behulpzaam bij het realiseren van de technische implementatie van de dataservice die het dataproduct aan gaat bieden.
 
@@ -80,7 +81,10 @@ Nog meer hulp kan worden verkregen door het gebruik van de LinkML Profiler. Dit 
 
 ---
 
-<img src="./assets/overzicht.png" width="100%">
+<figure id="overzicht">
+  <img src="./assets/overzicht.png" width="100%" alt="Dataproductvoortbrengingsproces met LinkML">
+  <figcaption>Dataproductvoortbrengingsproces met LinkML</figcaption>
+</figure>
     </section>
     <section id="werkzaamheden" data-format="markdown">
 ## Werkzaamheden
@@ -187,8 +191,6 @@ Verder is het wenselijk de IRI's dereferenceable te maken. Zie voor meer details
 * Nieuwe IRI's toekennen aan de begrippen en schema's.
 * IRI's dereferenceable maken zodat de definitie en documentatie van de begrippen via standaard HTTP-verzoeken op te vragen is.
 
----
-
 ### Hulpmiddelen bij het opstellen van dataproducten en profielen
 
 TODO. (Het profileren van LinkML-schema's, ongeacht wat voor type model erin beschreven is.)
@@ -266,6 +268,19 @@ Om de generatoren voor eindgebruikers toegankelijker te maken is het een goed id
 * UI (frontend) voor de LinkML-generatoren.
    * De applicatie is opensource en maakt geen domeinspecifieke aannames.
 
+### Geautomatiseerde PDF-documentatiegeneratie realiseren
+
+#### Omschrijving
+
+De MkDocs-webdocumentatie die door LinkML eenvoudig mogelijk wordt gemaakt is erg waardevol, maar er is vaak ook behoefte aan een draagbaar document in de vorm van Word- of PDF-formaat. Doorgaans worden deze documenten met de hand geschreven, wat erg veel tijd kost en bovendien een tweede bron van waarheid creëert.
+
+Het genereren van een dergelijk document moet even eenvoudig en vanuit eenzelfde enkele bron van waarheid kunnen worden gedaan als dat het geval is voor de webdocumentatie.
+
+
+#### Deliverables
+
+* Software die een PDF-variant van de documentatie genereert.
+
 #### Bouwen en aanpassen van LinkML-generatoren
 
 ##### Omschrijving
@@ -333,6 +348,17 @@ Verder kan software die door ons ontwikkeld wordt - waarin geen domeinspecifieke
 
 * Meehelpen verbeteren van LinkML door betrokken te blijven bij gesprekken en meehelpen met doorontwikkelen;
 * Ontwikkelde software die relevant is voor anderen opensource beschikbaar stellen aan de LinkML-gemeenschap.
+    </section>
+    <section id="begrippen-en-definities">
+<h2>Begrippen en definities</h2>
+      <table>
+        <tr>
+          <th><dfn>FAIR</dfn></th><td>Findable, accessible, interoperable en reusable.</td>
+        </tr>
+        <tr>
+          <th><dfn data-lt="logisch gegevensmodel">logisch informatiemodel</dfn></th><td>TODO.</td>
+        </tr>
+      </ul>
     </section>
   </body>
 </html>
