@@ -25,9 +25,13 @@
         specStatus: "base",
         editors: [ bartkl ],
         authors: [ bartkl ],
-        github: "Netbeheer-Nederland/doc-linkml-poc",
+        github: {
+            repoURL: "https://github.com/Netbeheer-Nederland/specs/",
+            branch: "main"
+        },
+        latestVersion: "https://netbeheer-nederland.github.io/specs/fair-linkml",
         maxTocLevel: 3,
-        lint: false,
+        lint: false,  // Op `false` zetten voor productie.
         logos: [
           {
             src: "assets/nbnl.svg",
