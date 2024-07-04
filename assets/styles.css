@@ -7,16 +7,6 @@ h1,h2,h3,h4,h5,h6 {
   margin: 2rem 0.5rem 0.5rem 0.5rem !important;
 }
 
-/*
-nav#toc a.tocxref {
-  margin-bottom: 1rem;
-}
-
-nav#toc li.tocline {
-  margin-bottom: 1rem;
-}
-*/
-
 nav#toc a.tocxref {
   line-height: 1.4rem;
 }
