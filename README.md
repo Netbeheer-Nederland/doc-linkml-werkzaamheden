@@ -19,5 +19,6 @@ gantt
     Gedistribueerd vraagdocument: milestone, 4, 4
     Analyse en evaluatie: 4, 7
     Beoordeling RFI: milestone, 7, 7
-    Besluitvorming en rapportage: 4, 5
-    Vergelijking en aanbeveling: 4, 5
+    Besluitvorming en rapportage: 7, 9
+    Bevindinging en aanbeveling: milestone, 9, 9
+    Demo aan stakeholders: milestone, 9, 9
